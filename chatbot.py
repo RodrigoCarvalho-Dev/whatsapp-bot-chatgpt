@@ -2,7 +2,7 @@
 
 import openai
 
-chave_api = "Your API Key"
+chave_api : str = "Your API Key"
 
 openai.api_key = chave_api
 
@@ -36,3 +36,4 @@ while True :
         resposta = enviar_mensagem( mensagem = texto , lista_de_mensagens = lista_mensagens )
         lista_mensagens.append(resposta)
         print("ChatBot: ", resposta["content"])
+        
